@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.molikoe.HelloController">
+   <center>
+      <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <MediaView fx:id="mediaView" fitHeight="200.0" fitWidth="200.0" />
+            <VBox alignment="BOTTOM_CENTER" minHeight="100.0" prefHeight="100.0" prefWidth="100.0">
+               <children>
+                  <Slider fx:id="ProgressBar">
+                     <VBox.margin>
+                        <Insets right="10.0" />
+                     </VBox.margin>
+                  </Slider>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#ChooseMethod" text="ChooseFile">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="7.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#play" text="Play">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="7.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#Pause" text="Pause">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="7.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#Stop" text="Stop">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="7.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#SlowRate" text="&lt;&lt;&lt;">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="7.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#FastForward" text="&gt;&gt;&gt;">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="7.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#Back10" text="-10s">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="7.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#Skip10" text="+10s">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="7.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Slider fx:id="Volume">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="7.0" />
+                           </HBox.margin>
+                        </Slider>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>
